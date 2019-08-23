@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Novo Documento</title>
+<style>
+form{background:cornsilk ;
+     padding: 5px;
+     width: 350px;
+     border: 1px solid blue;
+    }
+input{margin-top: 2px;
+      color:red;
+}
+</style>
+</head>
+<body>
+<form action="#">
+<label for="nome">Nome:</label> <br>
+<input disabled required autofocus placeholder="Digitar o nome" id="nome" type="text" name="nome" size="20px"><br>
+<label for="end">Endereço:</label><br>
+<input placeholder="Digitar endereço" id="end" type="text" name="end" size="40px" maxlength="50"><br>
+<label for="senha">Senha:</label> <br>
+<input required placeholder="Digitar a senha" id="senha" type="password" name="senha"><br>
+<label>Qual sua fruta preferida:</label><br>
+<input id="laranja" type="checkbox" name="laranja" value="laranja">
+<label for="laranja">Laranja</label><br>
+<input id="pera" type="checkbox" name="pera" value="pera" checked>
+<label for="pera">Pera</label><br>
+Qual o seu time?<br>
+<input type="radio" name="time" value="FLA">Flamengo
+<input type="radio" name="time" value="FLU">Fluminense<br>
+Cor: <br>
+<input type="color">
+Arquivo:<br>
+<input type="file"><br>
+Num: <input value="24" type="number" min="10" max="30"><br>
+Num: <input type="range" min="1" max="10"><br>
+Informe a data: <input type="date" min="2019-01-01" max="2019-12-31"><br>
+Observação:<br>
+<textarea name="obs" rows="5" cols="40" placeholder="Digitar aqui!">
+</textarea>
+<br>
+Selecione a cidade:<br>
+<select name="cidade">
+    <option value="1"><- escolher -></option>
+    <option value="jaragua">Jaragua do Sul</option>
+    <option value="blumenau">Blumenal</option>
+    <option value="joinvile">Joinvile</option>
+</select>
+<br>
+Selecione a cidade:<br>
+<select name="cidade" size="4" mul>
+    <option value="1"><- escolher -></option>
+    <option value="jaragua">Jaragua do Sul</option>
+    <option value="blumenau">Blumenal</option>
+    <option value="joinvile">Joinvile</option>
+</select>
+
+<br>
+<input type="submit" value="Enviar">
+<input type="reset" value="Limpar">
+<input type="button" value="Clicar" onclick="alert('ola mundo')">
+</form>
+<form oninput="x.value=parseInt(a.value)+parseInt(b.value)"> 
+        Num1: 0  <input type="range"  id="a" name="a" value="50">100<br>
+        Num2: <input type="number" id="b" name="b" value="50"><br>
+        Resultado: <output name="x" for="a b"></output><br><br>
+        <input type="submit">
+</form> 
+        
+
+</body>
+</html>
